@@ -33,11 +33,12 @@ function Contactus() {
          message: ''
        });
      })
-     .catch(() => {
+     .catch((err) => {
         setResult({
           success: false,
           message: 'Couldnt connect to the server.Please try again later'
         });
+     console.log(err);
       });
  };
 
